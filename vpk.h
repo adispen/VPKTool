@@ -285,10 +285,10 @@ void printdiff(vpk* a, vpk* b) {
 			leftindex++;
 			rightindex++;
 		} else if(cmp < 0) {
-			printf("> %s\n",a->entries[leftindex].fullname);
+			printf("- %s\n",a->entries[leftindex].fullname);
 			leftindex++;
 		} else { // cmp > 0
-			printf("< %s\n",b->entries[rightindex].fullname);
+			printf("+ %s\n",b->entries[rightindex].fullname);
 			rightindex++;
 		}	
 	}
