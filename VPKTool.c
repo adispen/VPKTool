@@ -2,7 +2,7 @@
 
 int main(int argc, char** argv) {
 	if(argc < 3) {
-		printf("Please provide a file argument\n");
+		printf("Please provide two file arguments\n");
 		return 1;
 	}
 	FILE* vpkfile1 = fopen(argv[1],"r");
